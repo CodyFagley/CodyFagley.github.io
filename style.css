@@ -11,8 +11,11 @@
   Table of Contents
   =================
   1.) Website Infrastructure
-  2.) Top Bar
-    2.a) Nameplate
+  2.) Signature
+    2.a) Name Plate
+    2.b) Job Plate
+  3.) Chart 
+    3.a) Canvas
 */
 
 
@@ -36,7 +39,7 @@ body
 
 
 /*
-  2.) Top Bar
+  2.) Signature
 */
 
 /* 2.a) Name Plate */
@@ -50,6 +53,7 @@ body
   position: inherit;
 }
 
+
 /* 2.b) Job Plate */
 .jobplate
 {
@@ -58,6 +62,24 @@ body
   font-size: 4ex;
   top: 3ex;
   left: 2.5ex;
+  position: inherit;
+}
+
+
+
+/*
+  3.) Chart 
+*/
+
+/* 3.a) Canvas */
+.chart_canvas
+{
+  height: 80%;
+  width: 80%;
+
+  top: 10%;
+  left: 10%;
+
   position: inherit;
 }
 
