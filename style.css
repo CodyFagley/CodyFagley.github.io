@@ -1,0 +1,63 @@
+/*
+  style.css
+  Cody Fagley
+  Authored on   March 1, 2019
+  Last Modified March 1, 2019
+*/
+
+/*
+  Contains stylistic definitions for Cody Fagley Personal Website
+
+  Table of Contents
+  =================
+  1.) Website Infrastructure
+  2.) Top Bar
+    2.a) Nameplate
+*/
+
+
+/*
+  1.) Website Infrastructure
+*/
+html, body
+{
+  height: 100%;
+  width:  100%;
+}
+
+/*
+  Body-Specific Definitions
+*/
+body
+{
+  background-color: rgb(230, 230, 230);
+  position: fixed;
+}
+
+
+/*
+  2.) Top Bar
+*/
+
+/* 2.a) Name Plate */
+.nameplate
+{
+  color: rgb(55, 55, 55);
+  font-family: EB Garamond;
+  font-size: 6ex;
+  top:  1ex;
+  left: 1.5ex;
+  position: inherit;
+}
+
+/* 2.b) Job Plate */
+.jobplate
+{
+  color: rgb(95, 95, 95);
+  font-family: EB Garamond;
+  font-size: 4ex;
+  top: 3ex;
+  left: 2.5ex;
+  position: inherit;
+}
+
