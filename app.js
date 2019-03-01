@@ -9,44 +9,45 @@
   Contains functions for use in Cody Fagley Personal Website
 */
 
-import "./node_modules/chart.js/dist/Chart.bundle.js";
+//  TODO: Programatically Determine Lines of C
+var total_c = 3992+3380;
 
-var ctx = document.getElementById("myChart");
-var myChart = 
-  new Chart(ctx, 
-  {
-    type: 'pie',
-    data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
-  });
+
+
+//  TODO: Programatically Determine Lines of Bison
+var total_bison = 812+345;
+
+//  TODO: Programatically Determine Lines of Flex
+var total_flex = 368;
+
+//  Total Lines of Flex/Bison
+var total_flex_bison = total_bison + total_flex;
+
+
+//  TODO: Programatically Determine Lines of Assembly
+var total_asm = 371;
+
+//  TODO: Programatically Determine Lines of XCSL
+var total_xcsl = 2156;
+
+//  TODO: Programatically Determine Lines of Web Programming
+var total_html = 71+111;
+var total_css = 266+91;
+var total_js = 42+98;
+
+//  Total Lines of Web Programming
+var total_web = total_html + total_css + total_js;
+
+
+//  TODO: Programatically Determine Lines of Scripts
+var total_make = 245;
+var total_bash = 129 + 51;
+
+//  Total Lines of Scripts
+var total_script = total_make + total_bash;
+
+//  TODO: Programatically Determine Lines of LaTeX
+var total_tex = 1126;
+
+
+var total_csharp = 1548 - 137;

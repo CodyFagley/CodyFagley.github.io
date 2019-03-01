@@ -33,7 +33,7 @@ html, body
 */
 body
 {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(242, 242, 242);
   position: fixed;
 }
 
@@ -65,6 +65,12 @@ body
   position: inherit;
 }
 
+/* 2.c) Image Plate */
+.imgplage
+{
+  top: 15ex;
+  position: inherit;
+}
 
 
 /*
