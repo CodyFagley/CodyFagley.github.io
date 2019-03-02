@@ -34,7 +34,7 @@ html, body
 body
 {
   background-color: rgb(242, 242, 242);
-  position: fixed;
+  position: absolute;
 }
 
 
@@ -48,7 +48,7 @@ body
   color: rgb(55, 55, 55);
   font-family: EB Garamond;
   font-size: 6ex;
-  top:  1ex;
+  top:    1ex;
   left: 1.5ex;
   position: inherit;
 }
@@ -60,7 +60,7 @@ body
   color: rgb(95, 95, 95);
   font-family: EB Garamond;
   font-size: 4ex;
-  top: 3ex;
+  padding-top: 5ex;
   left: 2.5ex;
   position: inherit;
 }
@@ -68,7 +68,10 @@ body
 /* 2.c) Image Plate */
 .imgplage
 {
-  top: 15ex;
+  top: 20ex;
+  left: 1ex;
+  height: 30ex;
+  width: 30ex;
   position: inherit;
 }
 
