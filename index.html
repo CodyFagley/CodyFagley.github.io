@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- JS Import -->
-  <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
-  <script src="app.js"></script> 
+  <script src="./app.js"></script> 
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 
 <body>
@@ -31,46 +31,37 @@
   <h2 class="jobplate">Software Architect</h2>
   <img class="imgplage" src="aux/cody.jpg"/>
 
-  <div class="chart_canvas"><canvas id="myChart"></canvas></div>
+  <div class="chart_canvas" id="chart"></div>
   
   <script>
-  
-var ctx = document.getElementById("myChart");
-var myChart = 
-  new Chart(ctx, 
-  {
-    type: 'pie',
-    data: {
-      labels: ["C", "Flex/Bison", "Assembly", "XCSL", "Web", "Scripts", "LaTeX", "C#/SQL"],
-      datasets: [{
-        label: '# of Lines Code',
-        data: [total_c, total_flex_bison, total_asm, total_xcsl, total_web, total_script, total_tex, total_csharp],
-        backgroundColor: [
-          'rgba(75, 75, 75, 0.3)',
-          'rgba(54, 162, 235, 0.3)',
-          'rgba(96, 40, 27, 0.3)',
-          'rgba(75, 192, 75, 0.3)',
-          'rgba(153, 102, 255, 0.3)',
-          'rgba(255, 159, 64, 0.3)',
-          'rgba(15, 100, 15, 0.3)',
-          'rgba(15, 15, 100, 0.3)'
-        ],
-        borderColor: [
-          'rgba(75, 75, 75, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(96, 40, 27, 1)',
-          'rgba(75, 192, 75, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
-          'rgba(15, 100, 15, 1)',
-          'rgba(15, 15, 100, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-    }
-  });
-</script>
+      window.onload = function() {
+      
+      var chart = new CanvasJS.Chart("chart", {
+        animationEnabled: true,
+        title: {
+          text: "Experience by Language"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          yValueFormatString: "##0.00\"%\"",
+          indexLabel: "{label} {y}",
+          dataPoints: [
+            {y: per_c*100, label: "C"},
+            {y: per_fb*100, label: "Flex/Bison"},
+            {y: per_xcsl*100, label: "XCSL"},
+            {y: per_asm*100, label: "Assembly"},
+            {y: per_web*100, label: "Web"},
+            {y: per_scpt*100, label: "Scripts"},
+            {y: per_tex*100, label: "LaTeX"},
+            {y: per_cs*100, label: "C#/SQL"},
+          ]
+        }],
+        backgroundColor: "#F2F2F2"
+      });
+      chart.render();
+      
+      }
+    </script>
 
 </body>

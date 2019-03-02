@@ -24,11 +24,12 @@ var total_flex = 368;
 var total_flex_bison = total_bison + total_flex;
 
 
-//  TODO: Programatically Determine Lines of Assembly
-var total_asm = 371;
-
 //  TODO: Programatically Determine Lines of XCSL
 var total_xcsl = 2156;
+
+
+//  TODO: Programatically Determine Lines of Assembly
+var total_asm = 371;
 
 //  TODO: Programatically Determine Lines of Web Programming
 var total_html = 71+111;
@@ -51,3 +52,18 @@ var total_tex = 1126;
 
 
 var total_csharp = 1548 - 137;
+
+
+var total = total_c + total_flex_bison + total_xcsl + total_asm + total_script + total_web + total_tex + total_csharp;
+
+
+//  Percentage Values
+var per_c    = parseFloat(total_c)/total;
+var per_fb   = parseFloat(total_flex_bison)/total;
+var per_xcsl = parseFloat(total_xcsl)/total;
+var per_asm  = parseFloat(total_asm)/total;
+var per_web  = parseFloat(total_web)/total;
+var per_scpt = parseFloat(total_script)/total;
+var per_tex  = parseFloat(total_tex)/total;
+var per_cs   = parseFloat(total_csharp)/total;
+
