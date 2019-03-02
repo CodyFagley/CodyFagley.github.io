@@ -83,6 +83,14 @@ body
   position: inherit;
 }
 
+.contact
+{
+  font-family: EB Garamond;
+  font-size: 1.25em;
+  top: 40ex;
+  left: 2ex;
+  position: inherit;
+}
 
 /*
   3.) Chart 
