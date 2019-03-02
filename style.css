@@ -71,7 +71,7 @@ body
   top: 20ex;
   left: 1ex;
   height: 30ex;
-  width: 30ex;
+  width: auto;
   position: inherit;
 }
 
