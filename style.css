@@ -90,6 +90,7 @@ body
   top: 18em;
   left: 2ex;
   position: inherit;
+  z-index: 1
 }
 
 /*
