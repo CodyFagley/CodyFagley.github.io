@@ -48,9 +48,7 @@ body
 {
   color: rgb(55, 55, 55);
   font-family: EB Garamond;
-  font-size: 6ex;
-  top:    1ex;
-  left: 1.5ex;
+  font-size: 5ex;
   position: inherit;
   z-index: 1;
 }
@@ -61,22 +59,28 @@ body
 {
   color: rgb(95, 95, 95);
   font-family: EB Garamond;
-  font-size: 4ex;
-  padding-top: 5ex;
-  left: 2.5ex;
+  font-size: 3.5ex;
   position: inherit;
   z-index: 1;
+  top: 3ex;
 }
 
 /* 2.c) Image Plate */
-.imgplage
+.imgplate
 {
-  top: 20ex;
+  top: 10ex;
   left: 1ex;
   height: auto;
   max-width: 15%;
   position: inherit;
   z-index: 1;
+}
+
+.signature
+{
+  width: 20%;
+  height: auto;
+  position: inherit;
 }
 
 
