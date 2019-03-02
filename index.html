@@ -37,11 +37,31 @@
   
   <script>
       window.onload = function() {
+      CanvasJS.addColorSet("greenShades",
+              [//colorSet Array
+              "#2F2F2F",
+              "#006000",
+              "#2E8B8B",
+              "#303090",
+              "#D09090",
+              "#7E2E1F", 
+              "#E08022",
+              "#228822",
+              "#BBBB20",
+              "#BBBBBB"
+              ]);
       
       var chart = new CanvasJS.Chart("chart", {
+        colorSet: "greenShades",
         animationEnabled: true,
         title: {
           text: "Professional Experience by Language"
+        },
+        toolTip:
+        {
+          content: "{label} Projects<br/><hr/>{projects}",
+          backgroundColor: "black",
+          fontColor: "white"
         },
         data: [{
           type: "pie",
@@ -49,16 +69,16 @@
           yValueFormatString: "##0.00\"%\"",
           indexLabel: "{label} {y}",
           dataPoints: [
-            {y: per_c*100, label: "C"},
-            {y: per_fb*100, label: "Flex/Bison"},
-            {y: per_xcsl*100, label: "XCSL"},
-            {y: per_caml*100, label: "OCaml"},
-            {y: per_rust*100, label: "Rust"},
-            {y: per_asm*100, label: "Assembly"},
-            {y: per_web*100, label: "Web"},
-            {y: per_scpt*100, label: "Scripts"},
-            {y: per_tex*100, label: "LaTeX"},
-            {y: per_cs*100, label: "C#/SQL"},
+            {y: per_c*100, label: "C", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
+            {y: per_fb*100, label: "Flex/Bison", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
+            {y: per_xcsl*100, label: "XCSL", projects: "XCSE-AArch64<br/>XCSE-x86_64"},
+            {y: per_caml*100, label: "OCaml", projects: "XCSE-PoC v1"},
+            {y: per_rust*100, label: "Rust", projects: "XCSE-PoC v2"},
+            {y: per_asm*100, label: "Assembly", projects: "XCSE-AArch64 Bootloader<br/>XCSE-x86_64 Bootloader"},
+            {y: per_web*100, label: "Web", projects: "Former Consultant<br/>https://codyfagley.github.io"},
+            {y: per_scpt*100, label: "Scripts", projects: "Automation Scripts<br/>Makefile Installers"},
+            {y: per_tex*100, label: "LaTeX", projects: "XCS User Manual<br/>XCS Technical Spec."},
+            {y: per_cs*100, label: "C#/SQL", projects: "Lending Library"},
           ]
         }],
         backgroundColor: "#F2F2F2"

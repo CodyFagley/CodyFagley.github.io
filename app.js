@@ -49,9 +49,9 @@ var total_xcsl = 2156;
 var total_asm = 371;
 
 //  TODO: Programatically Determine Lines of Web Programming
-var total_html = 71+111;
-var total_css = 266+91;
-var total_js = 42+98;
+var total_html = 78+111;
+var total_css = 266+112;
+var total_js = 91+98;
 
 //  Total Lines of Web Programming
 var total_web = total_html + total_css + total_js;
@@ -84,8 +84,6 @@ var per_web  = parseFloat(total_web)/total;
 var per_scpt = parseFloat(total_script)/total;
 var per_tex  = parseFloat(total_tex)/total;
 var per_cs   = parseFloat(total_csharp)/total;
-
-
 
 
 
