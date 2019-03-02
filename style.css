@@ -34,7 +34,7 @@ html, body
 body
 {
   background-color: rgb(242, 242, 242);
-  position: fixed;
+  position: absolute;
   overflow: hidden;
 }
 
@@ -89,7 +89,7 @@ body
   font-size: 1.25em;
   top: 18em;
   left: 2ex;
-  position: inherit;
+  position: absolute;
   z-index: 2
 }
 
