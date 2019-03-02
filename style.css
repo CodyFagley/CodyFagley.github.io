@@ -34,7 +34,7 @@ html, body
 body
 {
   background-color: rgb(242, 242, 242);
-  position: absolute;
+  position: fixed;
   overflow: hidden;
 }
 
