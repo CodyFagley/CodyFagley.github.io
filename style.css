@@ -48,7 +48,7 @@ body
 {
   color: rgb(55, 55, 55);
   font-family: EB Garamond;
-  font-size: 5ex;
+  font-size: 2em;
   position: inherit;
   z-index: 1;
 }
@@ -59,7 +59,7 @@ body
 {
   color: rgb(95, 95, 95);
   font-family: EB Garamond;
-  font-size: 3.5ex;
+  font-size: 1.5em;
   position: inherit;
   z-index: 1;
   top: 3ex;
