@@ -70,8 +70,8 @@ body
 {
   top: 20ex;
   left: 1ex;
-  height: 30ex;
-  width: auto;
+  height: auto;
+  max-width: 15%;
   position: inherit;
 }
 
