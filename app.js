@@ -20,7 +20,7 @@
 
 //  1.a) C
 //  TODO: Programatically Determine Lines of C
-var total_c = 3992+3380;
+var total_c = 4288+3380;
 
 
 //  1.b) Flex/Bison
