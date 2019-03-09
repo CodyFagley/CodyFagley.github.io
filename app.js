@@ -21,7 +21,7 @@
 //  1.a) C
 //  TODO: Programatically Determine Lines of C
 //  XCSL-AArch64 | XCSL-x86_64
-var total_c = 5861 + 3380;
+var total_c = 5879 + 3380;
 
 
 //  1.b) Flex/Bison
@@ -45,7 +45,8 @@ var total_rust = 2250;
 
 
 //  TODO: Programatically Determine Lines of XCSL
-var total_xcsl = 2156;
+//  XCSL-AArch64 | XCSE-AArch64
+var total_xcsl = 252 + 2264;
 
 
 //  TODO: Programatically Determine Lines of Assembly
