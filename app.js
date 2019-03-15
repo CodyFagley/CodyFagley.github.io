@@ -21,17 +21,17 @@
 //  1.a) C
 //  TODO: Programatically Determine Lines of C
 //  XCSL-AArch64 | XCSL-x86_64
-var total_c = 5879 + 3380;
+var total_c = 6465 + 3380;
 
 
 //  1.b) Flex/Bison
 //  TODO: Programatically Determine Lines of Bison
 //  XCSL-AArch64 | XCSL-x86_64
-var total_bison = 832 + 345;
+var total_bison = 855 + 345;
 
 //  TODO: Programatically Determine Lines of Flex
 //  XCSL-AArch64 | XCSL-x86_64
-var total_flex = 371;
+var total_flex = 310 + 117;
 
 //  Total Lines of Flex/Bison
 var total_flex_bison = total_bison + total_flex;
@@ -45,12 +45,13 @@ var total_rust = 2250;
 
 
 //  TODO: Programatically Determine Lines of XCSL
-//  XCSL-AArch64 | XCSE-AArch64
-var total_xcsl = 252 + 2264;
+//  XCSL-AArch64 | XCSE-AArch64 | XCSE-x86_64
+var total_xcsl = 252 + 2268 + 57;
 
 
 //  TODO: Programatically Determine Lines of Assembly
-var total_asm = 371;
+//  XCSE-AArch64 | XCSE-AArch64
+var total_asm = 236 + 275;
 
 //  TODO: Programatically Determine Lines of Web Programming
 var total_html = 78+111;
