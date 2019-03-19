@@ -10,24 +10,34 @@
   
   Table of Contents
   1.) Subsets
-    1.a) C
-    1.b) Flex/Bison
-    1.c) OCaml
-    1.d) Rust
+    1.a) XCSL
+    1.b) C
+    1.c) Flex/Bison
+    1.d) OCaml
+    1.e) Rust
   2.) Total
   3.) Percentages
 */
 
-//  1.a) C
+/*
+  1.) Subsets
+*/ 
+
+//  1.a) XCSL
+//  TODO: Programatically Determine Lines of XCSL
+//  XCSL-AArch64 | XCSE-AArch64 | XCSE-x86_64
+var total_xcsl = 252 + 2396 + 57;
+
+//  1.b) C
 //  TODO: Programatically Determine Lines of C
 //  XCSL-AArch64 | XCSL-x86_64
-var total_c = 8666 + 3380;
+var total_c = 9032 + 3380;
 
 
-//  1.b) Flex/Bison
+//  1.c) Flex/Bison
 //  TODO: Programatically Determine Lines of Bison
 //  XCSL-AArch64 | XCSL-x86_64
-var total_bison = 854 + 345;
+var total_bison = 855 + 345;
 
 //  TODO: Programatically Determine Lines of Flex
 //  XCSL-AArch64 | XCSL-x86_64
@@ -37,26 +47,26 @@ var total_flex = 310 + 117;
 var total_flex_bison = total_bison + total_flex;
 
 
-//  1.c) OCaml (Just a guess; Repos are gone)
+//  1.d) OCaml (Just a guess; Repos are gone)
 var total_caml = 3500;
 
-//  1.d) Rust (Just a guess; Repos are gone)
+//  1.e) Rust (Just a guess; Repos are gone)
 var total_rust = 2250;
 
-
-//  TODO: Programatically Determine Lines of XCSL
-//  XCSL-AArch64 | XCSE-AArch64 | XCSE-x86_64
-var total_xcsl = 252 + 2268 + 57;
 
 
 //  TODO: Programatically Determine Lines of Assembly
 //  XCSE-AArch64 | XCSE-AArch64
 var total_asm = 322 + 275;
 
+
 //  TODO: Programatically Determine Lines of Web Programming
-var total_html = 78+111;
+//  codyfagley.github.io | codeus.tech
+var total_html = 48+111;
+//  codyfagley.github.io | codeus.tech
 var total_css = 266+112;
-var total_js = 91+98;
+//  codyfagley.github.io | codeus.tech
+var total_js = 154+98;
 
 //  Total Lines of Web Programming
 var total_web = total_html + total_css + total_js;
