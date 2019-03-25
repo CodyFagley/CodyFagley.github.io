@@ -80,7 +80,7 @@ var total_bash = 129 + 51;
 var total_script = total_make + total_bash;
 
 //  TODO: Programatically Determine Lines of LaTeX
-var total_tex = 1126;
+var total_tex = 1126 + 956 + 200;
 
 
 var total_csharp = 1548 - 137;
