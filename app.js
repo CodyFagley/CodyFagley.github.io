@@ -26,22 +26,22 @@
 //  1.a) XCSL
 //  TODO: Programatically Determine Lines of XCSL
 //  XCSL-AArch64 | XCSE-AArch64 | XCSE-x86_64
-var total_xcsl = 252 + 2878 + 57;
+var total_xcsl = 252 + 3070 + 57;
 
 //  1.b) C
 //  TODO: Programatically Determine Lines of C
 //  XCSL-AArch64 | XCSL-x86_64
-var total_c = 9080 + 3380;
+var total_c = 9214 + 3380;
 
 
 //  1.c) Flex/Bison
 //  TODO: Programatically Determine Lines of Bison
 //  XCSL-AArch64 | XCSL-x86_64
-var total_bison = 854 + 345;
+var total_bison = 858 + 345;
 
 //  TODO: Programatically Determine Lines of Flex
 //  XCSL-AArch64 | XCSL-x86_64
-var total_flex = 310 + 117;
+var total_flex = 318 + 117;
 
 //  Total Lines of Flex/Bison
 var total_flex_bison = total_bison + total_flex;
