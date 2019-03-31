@@ -26,7 +26,7 @@
 //  1.a) XCSL
 //  TODO: Programatically Determine Lines of XCSL
 //  XCSL-AArch64 | XCSE-AArch64 | XCSE-x86_64
-var total_xcsl = 252 + 3641 + 57;
+var total_xcsl = 252 + 3943 + 57;
 
 //  1.b) C
 //  TODO: Programatically Determine Lines of C
