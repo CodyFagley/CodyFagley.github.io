@@ -56,8 +56,8 @@ var total_rust = 2250;
 
 
 //  TODO: Programatically Determine Lines of Assembly
-//  XCSE-AArch64 | XCSE-AArch64
-var total_asm = 322 + 275;
+//  XCSE-AArch64 | XCSE-x86_64
+var total_asm = 1600 + 275;
 
 
 //  TODO: Programatically Determine Lines of Web Programming
