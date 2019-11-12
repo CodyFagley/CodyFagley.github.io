@@ -34,6 +34,10 @@ var total_xcsl = 252 + 3943 + 57;
 var total_c = 9214 + 3380;
 
 
+//  Python
+var total_py = 3500;
+
+
 //  1.c) Flex/Bison
 //  TODO: Programatically Determine Lines of Bison
 //  XCSL-AArch64 | XCSL-x86_64
@@ -85,11 +89,12 @@ var total_tex = 1126 + 956 + 200;
 
 var total_csharp = 1548 - 137;
 
-var total = total_c + total_flex_bison + total_caml + total_rust + total_xcsl + total_asm + total_script + total_web + total_tex + total_csharp;
+var total = total_c + total_py + total_flex_bison + total_caml + total_rust + total_xcsl + total_asm + total_script + total_web + total_tex + total_csharp;
 
 
 //  Percentage Values
 var per_c    = parseFloat(total_c)/total;
+var per_py   = parseFloat(total_py)/total;
 var per_fb   = parseFloat(total_flex_bison)/total;
 var per_xcsl = parseFloat(total_xcsl)/total;
 var per_caml = parseFloat(total_caml)/total;
