@@ -18,84 +18,72 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=EB+Garamond" />
 
   <!-- CSS Import -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/references.css">
 
   <!-- JS Import -->
-  <script src="./app.js"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/showcase.js"></script> 
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <link rel="manifest" href="manifest.json">
 </head>
 
 <body id="container">
+
+  <!--  STILL IN TESTING
+  <div class="topbar">
+    <ul>
+      <li id="nav_overview">Overview</li>
+      <li id="nav_experience">Experience</li>
+      <li id="nav_projects">Projects</li> 
+      <li id="nav_references">References</li>
+    </ul>
+  </div>
+  -->
+  
   <!-- Name Plate -->
   <div class="signature">
     <h1 class="nameplate">Cody Fagley</h1>
     <h2 class="jobplate">Software Architect</h2>
-  </div>
-  <img class="imgplate" src="aux/cody.jpg"/>
-
-  <div class="chart_canvas" id="chart"></div>
+    <img class="imgplate" src="aux/cody.jpg"/>
   
-  <script>
-      window.onload = function() {
-      CanvasJS.addColorSet("greenShades",
-              [//colorSet Array
-              "#2E8B8B",
-              "#2F2F2F",
-              "#6666EE",
-              "#006000",
-              "#7E2E1F", 
-              "#303090",
-              "#D09090",
-              "#E08022",
-              "#228822",
-              "#BBBB20",
-              "#BBBBBB"
-              ]);
-      
-      var chart = new CanvasJS.Chart("chart", {
-        colorSet: "greenShades",
-        animationEnabled: true,
-        title: {
-          text: "Professional Experience by Language"
-        },
-        toolTip:
-        {
-          content: "{label} Projects<br/><hr/>{projects}",
-          backgroundColor: "black",
-          fontColor: "white"
-        },
-        data: [{
-          type: "pie",
-          startAngle: 220,
-          yValueFormatString: "##0.00\"%\"",
-          indexLabel: "{label} {y}",
-          dataPoints: [
-            {y: per_xcsl*100, label: "XCSL", projects: "XCSE-AArch64<br/>XCSE-x86_64"},
-            {y: per_c*100, label: "C", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
-            {y: per_py*100, label: "Python", projects: "Smart Slice Cura Plugin"},
-            {y: per_fb*100, label: "Flex/Bison", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
-            {y: per_asm*100, label: "Assembly", projects: "XCSE-AArch64 Bootloader<br/>XCSE-x86_64 Bootloader"},
-            {y: per_caml*100, label: "OCaml", projects: "XCSE-PoC v1"},
-            {y: per_rust*100, label: "Rust", projects: "XCSE-PoC v2"},
-            {y: per_web*100, label: "Web", projects: "Former Consultant<br/>https://codyfagley.github.io"},
-            {y: per_scpt*100, label: "Scripts", projects: "Automation Scripts<br/>Makefile Installers"},
-            {y: per_tex*100, label: "LaTeX", projects: "XCS User Manual<br/>XCS Technical Spec."},
-            {y: per_cs*100, label: "C#/SQL", projects: "Lending Library"},
-          ]
-        }],
-        backgroundColor: "#F2F2F2"
-      });
-      chart.render();
-      
-      }
-  </script>
+    <div class="contact">
+      phone: <a href="tel:1-307-272-9065">(307)272-9065</a><br>
+      email: <a href="mailto:cfagley@codeus.tech">cfagley@codeus.tech</a><br>
+      <a href="https://www.linkedin.com/in/cody-fagley/"><img src="aux/linkedin.png" width="30ex" height="30ex"/></a>
+      <a href="https://www.researchgate.net/profile/Cody_Fagley"><img src="aux/researchgate.png" width="30ex" height="30ex"/></a>
+      <a href="https://codeustech.github.io"><img src="aux/codeus.png" width="30ex" height="30ex"/></a>
+    </div>
+  </div>
 
-  <div class="contact">
-    phone: <a href="tel:1-307-272-9065">(307)272-9065</a><br>
-    email: <a href="mailto:cfagley@codeus.tech">cfagley@codeus.tech</a><br>
-    <a href="https://www.linkedin.com/in/cody-fagley/"><img src="aux/linkedin.png" width="30ex" height="30ex"/></a>
-    <a href="https://www.researchgate.net/profile/Cody_Fagley"><img src="aux/researchgate.png" width="30ex" height="30ex"/></a>
+
+  <div class="showcase" id="overview">
+    <script src="js/code_chart.js"></script>
+  </div>
+
+  <div class="showcase" id="experience">
+    <div class="showcaseTitle">Professional Experience</div>
+  </div>
+
+  <div class="showcase" id="projects">
+    <div class="showcaseTitle">Past Projects</div>
+
+  </div>
+
+  <div class="showcase border" id="references">
+    <div class="showcaseTitle">Professional References</div>
+
+    <div class="referenceItem" id="experience_dave">
+      <img class="referenceItemImage spacer" src="aux/refs/dave.jpg"/>
+      <div class="referenceItemText spacer">
+        <div class="referenceItemTitle">David Bohling, PhD</div>
+        <div style="width: 45ex;">
+          Dave has developed 
+
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>

@@ -1,0 +1,220 @@
+/*
+  style.css
+  Cody Fagley
+  Authored on   March 1, 2019
+  Last Modified March 1, 2019
+*/
+
+/*
+  Contains stylistic definitions for Cody Fagley Personal Website
+
+  Table of Contents
+  =================
+  1.) Website Infrastructure
+    1.a) Top Navigation Bar
+    1.b) Force Landscape (Mobile)
+  2.) Signature
+    2.a) Name Plate
+    2.b) Job Plate
+  3.) Showcase
+  4.) Utility Classes
+    4.a) Spacer
+*/
+
+
+/*
+  1.) Website Infrastructure
+*/
+html, body
+{
+  height: 100%;
+  width:  100%;
+}
+
+/*
+  Body-Specific Definitions
+*/
+body
+{
+  background-color: rgb(242, 242, 242);
+  position: absolute;
+  overflow: hidden;
+
+}
+
+/* 1.a) Top Navigation Bar */
+.topbar
+{
+  position: fixed;
+  width: 100ex;
+  height: 5ex;
+  top: 2ex;
+  left: 25%;
+}
+  .topbar ul
+  {
+    list-style: none;
+  }
+
+  /* Navigation Items */
+  .topbar ul li
+  {
+    font-family: EB Garamond;
+    display: inline;
+
+    font-size: 2ex;
+    font-style: italic;
+    padding-inline: 5ex;
+    cursor: pointer;
+    color: rgb(95, 95, 95);
+  }
+
+  .topbar ul li:hover
+  {
+    opacity: 60%;
+  }
+
+  .topbar ul li:active
+  {
+    opacity: 100%;
+    color:rgb(0, 0, 0);
+  }
+
+  /*
+    1.b) Force Landscape (Mobile)
+  
+      Taken from: http://fuel-efficient-vehicles.org/pwsdb/?p=330
+  */
+  #container { display:block; position: fixed; }
+  
+  @media only screen and (orientation:portrait)
+  {
+  
+    #container 
+    {
+      height: 100vw;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  
+  @media only screen and (orientation:landscape)
+  {
+    #container 
+    {
+       -webkit-transform: rotate(0deg);
+       -moz-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+       -ms-transform: rotate(0deg);
+       transform: rotate(0deg);
+    }
+  }
+
+
+/*
+  2.) Signature
+*/
+
+/* 2.a) Name Plate */
+.nameplate
+{
+  color: rgb(55, 55, 55);
+  font-family: EB Garamond;
+  font-size: 2em;
+  position: inherit;
+  z-index: 1;
+}
+
+
+/* 2.b) Job Plate */
+.jobplate
+{
+  color: rgb(95, 95, 95);
+  font-family: EB Garamond;
+  font-size: 1.5em;
+  position: inherit;
+  z-index: 1;
+  top: 3ex;
+  margin-top: -1.5ex;
+}
+
+/* 2.c) Image Plate */
+.imgplate
+{
+  top: 10ex;
+  left: 1ex;
+  height: auto;
+  /*max-width: 15%;*/
+  position: inherit;
+  z-index: 1;
+}
+
+.signature
+{
+  width: 20%;
+  height: auto;
+}
+
+.contact
+{
+  font-family: EB Garamond;
+  font-size: 1em;
+  z-index: 2;
+  padding-top: .5ex;
+}
+
+
+/*
+  3.) Showcase
+*/
+.showcase
+{
+  height: 65%;
+  width: 65%;
+
+  top: 15ex;
+  left: 40ex;
+  opacity: 0;
+
+  position: inherit;
+}
+
+  .showcaseTitle
+  {
+    position: relative;
+    top: 2ex;
+    left: 3ex;
+
+
+    font-size: 3ex;
+    font-weight: bold;
+  }
+
+
+/*
+  4.) Utility Classes
+*/
+
+  /*
+    4.a) Border
+  */
+  .border
+  {
+    border-width: .5ex;
+    border-color: rgb(95, 95, 95);
+    border-radius: .5ex;
+    border-style: solid;
+  }
+
+  /*
+    4.b) Spacer
+  */
+
+  .spacer
+  {
+    padding: 5%;
+  }
+

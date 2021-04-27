@@ -1,0 +1,34 @@
+/*
+  references.css
+  Cody Fagley
+  Last Modified April 27, 2021
+*/
+
+/*
+  Contains all css styling for references "page"
+*/
+
+
+
+.referenceItem
+{
+  position: absolute;
+  top: 10ex;
+
+  display: flex;
+}
+
+  .referenceItemText
+  {
+    width: 100%;
+    font-size: 2.5ex;
+  }
+
+  .referenceItemTitle
+  {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.25ex;
+    padding-bottom: 1ex;
+  }
+

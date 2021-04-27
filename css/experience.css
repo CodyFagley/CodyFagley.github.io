@@ -1,0 +1,18 @@
+/*
+  experience.css
+  Cody Fagley
+  Last Modified April 27, 2021
+*/
+
+/*
+  Contains css styling for experience "page"
+*/
+
+
+.experienceItem
+{
+  padding-top: 2ex;
+
+  display: inline;
+}
+
