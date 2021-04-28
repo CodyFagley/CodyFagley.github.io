@@ -38,8 +38,6 @@ body
 {
   background-color: rgb(242, 242, 242);
   position: absolute;
-  overflow: hidden;
-
 }
 
 /* 1.a) Top Navigation Bar */
@@ -86,37 +84,18 @@ body
       Taken from: http://fuel-efficient-vehicles.org/pwsdb/?p=330
   */
   #container { display:block; position: fixed; }
-  
-  @media only screen and (orientation:portrait)
-  {
-  
-    #container 
-    {
-      height: 100vw;
-      -webkit-transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-    }
-  }
-  
-  @media only screen and (orientation:landscape)
-  {
-    #container 
-    {
-       -webkit-transform: rotate(0deg);
-       -moz-transform: rotate(0deg);
-       -o-transform: rotate(0deg);
-       -ms-transform: rotate(0deg);
-       transform: rotate(0deg);
-    }
-  }
 
 
 /*
   2.) Signature
 */
+
+.signature
+{
+  width: 20%;
+  height: auto;
+  z-index: 45;
+}
 
 /* 2.a) Name Plate */
 .nameplate
@@ -147,15 +126,9 @@ body
   top: 10ex;
   left: 1ex;
   height: auto;
-  /*max-width: 15%;*/
+  max-width: 100%;
   position: inherit;
   z-index: 1;
-}
-
-.signature
-{
-  width: 20%;
-  height: auto;
 }
 
 .contact
@@ -175,8 +148,8 @@ body
   height: 65%;
   width: 65%;
 
-  top: 15ex;
-  left: 40ex;
+  top: 12.5ex;
+  left: 45ex;
   opacity: 0;
 
   position: inherit;
@@ -193,6 +166,16 @@ body
     font-weight: bold;
   }
 
+  @media screen and (max-height: 900px)
+  {
+    .showcase
+    {
+      top: 7.5ex;
+      left: 35ex;
+    }
+
+    .showcaseTitle { font-size: 2ex; }
+  }
 
 /*
   4.) Utility Classes

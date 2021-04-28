@@ -22,6 +22,7 @@ $(document).ready(function(){
     $("#experience").animate({opacity: "0"}, "slow");
     $("#references").animate({opacity: "0"}, "slow");
     $("#projects").animate({opacity: "0"}, "slow");
+    $("#dialog").dialog('close');
 
     setTimeout(function() {$("#overview").animate({opacity: "100"})}, 500);
     $("#overview").css("z-index", ++count);
@@ -31,6 +32,7 @@ $(document).ready(function(){
     $("#overview").animate({opacity: "0"}, "slow");
     $("#references").animate({opacity: "0"}, "slow");
     $("#projects").animate({opacity: "0"}, "slow");
+    $("#dialog").dialog('close');
 
     setTimeout(function() {$("#experience").animate({opacity: "100"})}, 500);
     $("#experience").css("z-index", ++count);
@@ -40,6 +42,7 @@ $(document).ready(function(){
     $("#overview").animate({opacity: "0"}, "slow");
     $("#experience").animate({opacity: "0"}, "slow");
     $("#projects").animate({opacity: "0"}, "slow");
+    $("#dialog").dialog('close');
 
     setTimeout(function() {$("#references").animate({opacity: "100"})}, 500);
     $("#references").css("z-index", ++count);
@@ -53,7 +56,7 @@ $(document).ready(function(){
     setTimeout(function() {$("#projects").animate({opacity: "100"})}, 500);
     $("#projects").css("z-index", ++count);
 
-  })
+  });
 
 
 });

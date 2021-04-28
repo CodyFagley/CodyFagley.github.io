@@ -21,26 +21,28 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/experience.css">
   <link rel="stylesheet" href="css/references.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 
   <!-- JS Import -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/showcase.js"></script> 
+  <script src="js/projects.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <link rel="manifest" href="manifest.json">
 </head>
 
 <body id="container">
 
-  <!--  STILL IN TESTING
   <div class="topbar">
     <ul>
       <li id="nav_overview">Overview</li>
-      <li id="nav_experience">Experience</li>
       <li id="nav_projects">Projects</li> 
-      <li id="nav_references">References</li>
+      <!--<li id="nav_experience">Experience</li>
+      <li id="nav_references">References</li>-->
     </ul>
   </div>
-  -->
   
   <!-- Name Plate -->
   <div class="signature">
@@ -67,12 +69,38 @@
   </div>
 
   <div class="showcase" id="projects">
-    <div class="showcaseTitle">Past Projects</div>
+    <div class="showcaseTitle">Examples of Work</div>
 
+    <div class="project" id="xita">
+      <div style="width: 55ex; padding-right: 2.5ex;">
+        <div class="projectText">
+          <strong>Xita Control System</strong> is an ambitious attempt to provide intrinsic security for industrial embedded devices (IIoT).  <br/><br/>
+          Xita produces freestanding (OS-independent) assembly code with guaranteed protection from:
+          <ul>
+            <li>Memory Buffer Overflow</li>
+            <li>Physical Side Channels</li>
+            <li>Microarchitecture Data Sampling</li>
+          </ul>
+          Users can write Xita-compliant code with functional programming syntax or using a graphical interface.
+        </div>
+      </div>
+      <div style="text-align: center;" class="projectImages">
+        Fibonacci Sequence (Click Me!)<br/><img src="aux/xitatext.png" style="position: relative; padding-bottom: 5ex; z-index: 10; cursor: pointer;" id="xita_src"/> <br/>
+        Graphical Coding Interface<br/><img src="aux/xita.png" style="width: 45ex;"/>
+      </div>
+    </div>
+
+    <div class="project" id="mouse_vision">
+      
+    </div>
+    <div id="dialog" title="Xita Generated Assembly (Fibonacci)">
+      <img src="aux/xitaasm.png"/> <br/>
+      <strong>Click here to close dialog</strong>
+    </div>
   </div>
 
   <div class="showcase border" id="references">
-    <div class="showcaseTitle">Professional References</div>
+    <div class="showcaseTitle">Personal References</div>
 
     <div class="referenceItem" id="experience_dave">
       <img class="referenceItemImage spacer" src="aux/refs/dave.jpg"/>

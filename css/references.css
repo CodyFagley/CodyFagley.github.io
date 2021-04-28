@@ -32,3 +32,23 @@
     padding-bottom: 1ex;
   }
 
+
+@media screen and (max-height: 900px)
+{
+  .referenceItem { top: 2ex; }
+
+  .referenceItemText
+  {
+    font-size: 1.5ex;
+  }
+
+  .referenceItemTitle
+  {
+    font-size: 1.75ex;
+  }
+
+  .referenceItemImage
+  {
+    max-height: 20ex;
+  }
+}

@@ -9,3 +9,75 @@
 */
 
 
+.project
+{
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  margin-top: 7ex;
+  margin-left: 5ex;
+
+  display: flex;
+}
+
+.projectText
+{
+  position: inherit;
+
+  color:rgb(75, 75, 75);
+  font-size: 2ex;
+  font-style: italic;
+}
+
+
+@media screen and (max-height: 900px)
+{
+  .project
+  {
+    margin-top: 4ex;
+  }
+
+  .projectText
+  {
+    font-size: 1.5ex;
+  }
+
+  .projectImages
+  {
+    margin-top: -5ex;
+  }
+}
+
+/*
+  Dialog Handling
+*/
+.ui-dialog
+{
+  background-color: rgb(38, 33, 22);
+  color: white;
+  text-align: center;
+
+  z-index: 55;
+  cursor: pointer;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+  padding: .5ex;
+  background-color: rgb(75, 75, 75);
+
+  border-color: rgb(75, 75, 75);
+  border-bottom: black;
+  border-style: solid;
+}
+  .no-close .ui-dialog-titlebar-close 
+  {  
+    display: none;
+  } 
+
+.ui-dialog .ui-dialog-content
+{
+  padding: 1.5ex;
+  z-index: 60;
+}
+
