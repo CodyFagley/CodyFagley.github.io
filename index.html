@@ -59,14 +59,23 @@
     </div>
   </div>
 
+  <!-- 
+    OVERVIEW SHOWCASE
+  -->
   <div class="showcase" id="overview">
     <script src="js/code_chart.js"></script>
   </div>
 
+  <!-- 
+    EXPERIENCE SHOWCASE
+  -->
   <div class="showcase" id="experience">
     <div class="showcaseTitle">Professional Experience</div>
   </div>
 
+  <!--
+    PROJECTS SHOWCASE
+  -->
   <div class="showcase" id="projects">
     <div class="showcaseTitle">Examples of Work</div>
 
@@ -84,20 +93,50 @@
         </div>
       </div>
       <div style="text-align: center;" class="projectImages">
-        Fibonacci Sequence (Click Me!)<br/><img src="aux/xitatext.png" style="position: relative; padding-bottom: 5ex; z-index: 10; cursor: pointer;" id="xita_src"/> <br/>
-        Graphical Coding Interface<br/><img src="aux/xita.png" style="width: 45ex;"/>
+        Fibonacci Sequence (Click Me!)<br/><img src="aux/xitatext.png" style="position: relative; margin-bottom: 10ex; z-index: 10; cursor: pointer;" id="xita_src"/> <br/>
+        Graphical Coding Interface<br/><img src="aux/xita.png" style="width: 45ex; position: relative; z-index: 11;" id="xita_graph"/>
       </div>
     </div>
 
     <div class="project" id="mouse_vision">
-      
+      <div style="width: 55ex; padding-right: 2.5ex;">
+        <div class="projectText">
+          <strong><a href="https://uwyo.figshare.com/articles/presentation/MouseVision/13704712/1" target="_blank">MouseVision</a></strong> 
+          combines facial recognition software (OpenCV) with voice recognition libraries (CMU Sphinx) to enable users to control their computer
+          mouse cursor without use of their hands.  <br><br>
+          Users simply need a webcam and microphone to use this driver.  MouseVision uses OpenCV to track users' eyes, triggering movement in the computer's mouse cursor. <br><br>
+          Once active, users can issue commands through their microphone such as:
+          <ul>
+            <li>"Left Click"</li>
+            <li>"Right Click"</li>
+          </ul>
+          (co-developed with <a href="https://www.linkedin.com/in/mark-gradecki-1b757912a" target="_blank">Mark Gradecki</a>, <a href="https://www.linkedin.com/in/shane-firnekas-110a97117/" target="_blank">Shane Firnekas</a>, and <a href="https://www.linkedin.com/in/wyatt-horner-ab9887116/" target="_blank">Wyatt Horner</a>) 
+        </div>
+      </div>
+      <div style="text-align: center;" class="projectImages Spacer">
+        Facial Tracker (OpenCV)<br/><img src="aux/tracker.png" id="tracker" style="width: 45ex;"/> <br/>
+      </div>
     </div>
+
+    <div class="projectNavigatorBar">
+      <div class="dot" id="dot_xita"></div>
+      <div class="dot" id="dot_mousevision"></div>
+    </div>
+
     <div id="dialog" title="Xita Generated Assembly (Fibonacci)">
       <img src="aux/xitaasm.png"/> <br/>
       <strong>Click here to close dialog</strong>
     </div>
+    <div id="dialog2" title="Xita Graphical Coding Interface">
+      <img src="aux/xitagraph.png"/><br/>
+      <strong>Click here to close dialog</strong>
+    </div>
+
   </div>
 
+  <!--
+    REFERENCES SHOWCASE
+  -->
   <div class="showcase border" id="references">
     <div class="showcaseTitle">Personal References</div>
 

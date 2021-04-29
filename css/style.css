@@ -18,7 +18,9 @@
     2.b) Job Plate
   3.) Showcase
   4.) Utility Classes
-    4.a) Spacer
+    4.a) Border
+    4.b) Spacer
+    4.c) Navigation "Dot"
 */
 
 
@@ -95,6 +97,7 @@ body
   width: 20%;
   height: auto;
   z-index: 45;
+  margin-left: 1ex;
 }
 
 /* 2.a) Name Plate */
@@ -200,4 +203,24 @@ body
   {
     padding: 5%;
   }
+
+
+  /*
+    4.c) Navigation "Dot"
+  */
+
+  .dot 
+  {
+    margin: auto;
+    height: 1.5em;
+    width: 1.5em;
+    margin-inline-start: 10ex;
+    margin-inline-end: 10ex;
+
+    /* Rounded border */
+    border-style: solid;
+    border-radius: 9999px;
+
+  }
+
 

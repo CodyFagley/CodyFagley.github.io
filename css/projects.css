@@ -18,17 +18,40 @@
   margin-left: 5ex;
 
   display: flex;
+  opacity: 0;
 }
 
 .projectText
 {
   position: inherit;
+  width: 55ex; 
+  padding-right: 2.5ex;
 
   color:rgb(75, 75, 75);
   font-size: 2ex;
   font-style: italic;
 }
 
+.projectImages
+{
+  margin-top: -5ex;
+  margin-left: 3.5ex;
+}
+
+
+.projectNavigatorBar
+{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+
+  display: flex;
+}
+
+
+/*
+  MEDIA SCREENS
+*/
 
 @media screen and (max-height: 900px)
 {
@@ -40,13 +63,8 @@
   .projectText
   {
     font-size: 1.5ex;
-    width: 140%;
+    width: 70ex;
     margin-left: -15ex;
-  }
-
-  .projectImages
-  {
-    margin-top: -5ex;
   }
 }
 
