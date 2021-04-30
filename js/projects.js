@@ -43,7 +43,7 @@ $("document").ready(function(){
       autoOpen: false,
       dialogClass: "no-close",
       modal: true,
-      width: 650,
+      width: 850,
       show: {
         effect: "fade",
         duration: 500
