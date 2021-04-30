@@ -8,57 +8,59 @@
   Controls Dynamic Functionality for Project Showcases
 */
 
-var lock = false;
-
-$( function() {
-  $( "#dialog" ).dialog({
-    autoOpen: false,
-    dialogClass: "no-close",
-    modal: true,
-    width: 650,
-    show: {
-      effect: "fade",
-      duration: 500
-    },
-    hide: {
-      effect: "fade",
-      duration: 500
-    },
-    open: function (event, ui) {
-      $('#dialog').bind('click', function () {
-          $("#dialog").dialog('close');
-          lock = false;
-      });
-      lock = true;
-    }
-  });
-});
-
-$( function() {
-  $( "#dialog2" ).dialog({
-    autoOpen: false,
-    dialogClass: "no-close",
-    modal: true,
-    width: 650,
-    show: {
-      effect: "fade",
-      duration: 500
-    },
-    hide: {
-      effect: "fade",
-      duration: 500
-    },
-    open: function (event, ui) {
-      $('#dialog2').bind('click', function () {
-          $("#dialog2").dialog('close');
-          lock = false;
-      });
-      lock = true;
-    }
-  });
-});
 
 $("document").ready(function(){
+
+
+  var lock = false;
+
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      dialogClass: "no-close",
+      modal: true,
+      width: 650,
+      show: {
+        effect: "fade",
+        duration: 500
+      },
+      hide: {
+        effect: "fade",
+        duration: 500
+      },
+      open: function (event, ui) {
+        $('#dialog').bind('click', function () {
+            $("#dialog").dialog('close');
+            lock = false;
+        });
+        lock = true;
+      }
+    });
+  });
+  
+  $( function() {
+    $( "#dialog2" ).dialog({
+      autoOpen: false,
+      dialogClass: "no-close",
+      modal: true,
+      width: 650,
+      show: {
+        effect: "fade",
+        duration: 500
+      },
+      hide: {
+        effect: "fade",
+        duration: 500
+      },
+      open: function (event, ui) {
+        $('#dialog2').bind('click', function () {
+            $("#dialog2").dialog('close');
+            lock = false;
+        });
+        lock = true;
+      }
+    });
+  });
 
   activateProject(0);
 
