@@ -73,11 +73,13 @@ $("document").ready(function(){
 
   $('#dot_xita').on("click", function(){
     activateProject(0);
-  })
-
+  });
   $('#dot_mousevision').on("click", function(){
     activateProject(1);
-  })
+  });
+  $('#dot_venom').on("click", function(){
+    activateProject(2);
+  });
 
 });
 
@@ -97,6 +99,10 @@ function activateProject(id)
       case 1: 
         $("#mouse_vision").css("opacity", "0");
         break;
+      case 2:
+        $("#venom").css("opacity", "0");
+        break;
+
       default:
     }
     activated_project = id;
@@ -107,6 +113,9 @@ function activateProject(id)
         break;
       case 1:
         $("#mouse_vision").css("opacity", "100%");
+        break;
+      case 2:
+        $("#venom").css("opacity", "100%");
         break;
 
       default:
