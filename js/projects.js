@@ -79,8 +79,11 @@ $("document").ready(function(){
   $('#dot_mousevision').on("click", function(){
     activateProject(1);
   });
-  $('#dot_venom').on("click", function(){
+  $('#dot_cgal').on("click", function(){
     activateProject(2);
+  });
+  $('#dot_venom').on("click", function(){
+    activateProject(3);
   });
 
 });
@@ -102,6 +105,8 @@ function activateProject(id)
         $("#mouse_vision").css("opacity", "0");
         break;
       case 2:
+        $("#cgal").css("opacity", "0");
+      case 3:
         $("#venom").css("opacity", "0");
         break;
 
@@ -117,6 +122,9 @@ function activateProject(id)
         $("#mouse_vision").css("opacity", "100%");
         break;
       case 2:
+        $("#cgal").css("opacity", "100%");
+        break;
+      case 3:
         $("#venom").css("opacity", "100%");
         break;
 
