@@ -11,7 +11,6 @@
 
 $("document").ready(function(){
 
-
   var lock = false;
 
   $( function() {
@@ -90,6 +89,7 @@ $("document").ready(function(){
 
 
 var activated_project = -1;
+var front = 100;
 
 
 function activateProject(id)
@@ -117,15 +117,19 @@ function activateProject(id)
     {
       case 0:
         $("#xita").css("opacity", "100%");
+        $("#xita").css("z-index", ++front);
         break;
       case 1:
         $("#mouse_vision").css("opacity", "100%");
+        $("#mouse_vision").css("z-index", ++front);
         break;
       case 2:
         $("#cgal").css("opacity", "100%");
+        $("#cgal").css("z-index", ++front);
         break;
       case 3:
         $("#venom").css("opacity", "100%");
+        $("#venom").css("z-index", ++front);
         break;
 
       default:

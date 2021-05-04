@@ -39,8 +39,8 @@
     <ul>
       <li id="nav_overview">Overview</li>
       <li id="nav_projects">Projects</li> 
-      <!--<li id="nav_experience">Experience</li>
-      <li id="nav_references">References</li>-->
+      <li id="nav_experience">Experience</li>
+      <!--<li id="nav_references">References</li>-->
     </ul>
   </div>
   
@@ -117,13 +117,13 @@
     <div class="project" id="cgal">    
       <div style="width: 55ex; padding-right: 2.5ex;">
         <div class="projectText">
-          While consulting in October 2019, I ported python bindings for Linux's <a href="https://github.com/CGAL/cgal-swig-bindings/pull/146" target="_blank">Computational Geometry Algorithms Library</a></strong> (CGAL). 
+          While consulting in October 2019, I ported python bindings for <a href="https://github.com/CGAL/cgal-swig-bindings/pull/146" target="_blank">Computational Geometry Algorithms Library</a></strong> (CGAL). 
           <br><br>Specifically, I provided Python libraries with equivalent functions/features to CGAL's 3d shape detection library (C++).<br><br>
           Note: These used "Efficient RANSAC" algorithm and do not provide implementations for "Region Growing".
         </div>
       </div>
       <div style="text-align: center;" class="projectImages Spacer">
-        <a href="https://doc.cgal.org/latest/Shape_detection/index.html">Vizualization of Efficient RANSAC Algorithm<br/><img src="aux/ransac.png" id="ransac" style="width: 45ex;"/></a> <br/>
+        <a href="https://doc.cgal.org/latest/Shape_detection/index.html" target="_blank">Vizualization of Efficient RANSAC Algorithm<br/><img src="aux/ransac.png" id="ransac" style="width: 45ex;"/></a> <br/>
       </div>
     </div>
 
@@ -131,14 +131,14 @@
     <div class="project" id="venom">
       <div style="width: 55ex; padding-right: 2.5ex;">
         <div class="projectText">
-          While studying Chemical Engineering, I verified that basic venom from Agkistrodon Piscivorus Piscivorus (Water Moccasin) inhibited 
-          generation of thrombin (blood clotting agent) in the same way the more acidic varients of Agkistrodon snakes do.<br><br>
+          While studying chemical engineering, I verified that basic (pH) venom from Water Moccasin (Agkistrodon Piscivorus) inhibits 
+          generation of blood clotting agents in the same way that more acidic varients of Agkistrodon snakes do.<br><br>
           It was determined that basic Agkistrodon venom does indeed inhibit prothrombin conversion.<br><br>
-          Although Water Moccasin venom can be localized and effectively acts as an anticoagulant, it is not currently cost effective compared to existing alternatives.
+          Although Water Moccasin venom can be localized and effectively acts as an anticoagulant, it is not currently cost efficient compared to existing alternatives.
         </div>
       </div>
-      <div style="text-align: center; font-size: 1ex;" class="projectImages Spacer"><!--href="aux/Fagley_AvBAA.pdf" target="_blank"-->
-         <br/><a><img src="aux/venom.jpg" id="img_venom" style="width: 85ex;"/></a> <br/><br/>
+      <div style="text-align: center; font-size: 1ex;" class="projectImages Spacer">
+         <br/><a href="aux/Fagley_AvBAA.pdf" target="_blank"><img src="aux/venom.jpg" id="img_venom" style="width: 85ex;"/></a> <br/><br/>
          Lane 1 (left-most) depicts thrombin generated normally with coagulation factor Xa.  Lane 2 depicts prothrombin's reaction to the snake venom (most prominently in the lowest ring).  The other lanes are used for control.
       </div>
     </div>
@@ -169,10 +169,52 @@
     <div class="showcaseTitle">Professional Experience</div>
 
     <!-- Codeus Tech -->
-    <div class="experienceContent" id="experience_codeus">
-
+    <div class="experienceItem" id="codeus">
+      <div style="display: flex;">
+        <img class="companyLogo" src="aux/logos/codeus_black.png"/>
+        <div>
+          <div class="experienceTitle">Codeus Tech</div>
+          <div class="experienceSubtitle">Founder/Director</div>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div style="margin-inline: 2ex; width: 55ex;">
+          <div class="experienceContentTitle">Description</div>
+          <div class="experienceDescript">
+            Codeus Tech builds an alternative foundation for secure, high-assurance embedded (IoT) devices.<br><br>
+            Their flagship product includes a proprietary programming language that can be developed either graphically or with functional (Haskell-like) syntax.<br><br>
+            Xita Control System (XCS) eliminates several low-level security holes such as memory buffer overflow, microarchitecture data sampling, and several physical side-channels.
+          </div>
+        </div>
+        <div style="margin-left: 3ex;">
+          <div class="experienceContentTitle">Role & Duties</div>
+          <div class="experienceRole" style="overflow-y: auto;">
+            <strong>Years 1-2</strong>
+            <ul>
+              <li>Verified operating subsystem designs in OCaml and Rust for use in new programming language</li>
+              <li>Planned and prototyped OS-independent programming language (XCSL) for x86_64 and AArch64 chips</li>
+              <li>Built team of University professors for proposals</li>
+              <li>Led employees in firmware/compiler development</li>
+            </ul>
+            <strong>Years 3-4</strong>
+            <ul>
+              <li>Built budgets of various sizes with estimated ROI</li>
+              <li>Authored and submitted 10+ federal grants</li>
+              <li>Pursued funds from investors, VCs, and strategic partners</li>
+              <li>Primary author on non-provisional utility patent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Experience Navigation Bar 
+    <div class="projectNavigatorBar">
+      <div class="dot" id="dot_codeus"></div>
+      <div class="dot" id="dot_teton"></div>
+      <div class="dot" id="dot_siteseers"></div>
+      <div class="dot" id="dot_westmoreland"></div>
+    </div>-->
   </div>
 
   <!--

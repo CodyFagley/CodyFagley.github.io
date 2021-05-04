@@ -169,6 +169,7 @@ body
     font-weight: bold;
   }
 
+
   @media screen and (max-height: 900px)
   {
     .showcase
@@ -214,13 +215,11 @@ body
     margin: auto;
     height: 1.5em;
     width: 1.5em;
-    margin-inline-start: 10ex;
-    margin-inline-end: 10ex;
 
     /* Rounded border */
     border-style: solid;
     border-radius: 9999px;
-
+    cursor: pointer;
   }
 
 

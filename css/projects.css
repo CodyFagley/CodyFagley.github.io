@@ -42,8 +42,8 @@
 .projectNavigatorBar
 {
   position: absolute;
-  bottom: 0%;
-  width: 100%;
+  bottom: -8ex;
+  width: 80%;
 
   display: flex;
 }

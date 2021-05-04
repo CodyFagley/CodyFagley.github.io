@@ -11,8 +11,70 @@
 
 .experienceItem
 {
-  padding-top: 2ex;
-
-  display: inline;
+  position: relative;
+  margin-top: 7.5ex;
 }
 
+.companyLogo
+{
+  margin-top: .5ex;
+  margin-inline: 5ex;
+  width: 5ex;
+  height: 5ex;
+}
+
+
+.experienceTitle
+{
+
+  color: rgb(75, 75, 75);
+  font-size: 2.5ex;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.experienceSubtitle
+{
+  color: rgb(75, 75, 75);
+  font-size: 2.25ex;
+  font-style: italic;
+}
+
+.experienceContentTitle
+{
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+
+  color:rgb(75, 75, 75);
+  font-size: 2ex;
+  font-weight: bold;
+}
+
+.experienceDescript
+{
+  color:rgb(75, 75, 75);
+  font-size: 2ex;
+}
+
+.experienceRole
+{
+  color: rgb(75, 75, 75);
+  width: 58ex;
+  font-size: 1.75ex;
+}
+
+.experienceRole ul li
+{
+  margin-bottom: 1ex;
+}
+
+
+
+@media screen and (max-height: 900px)
+{
+  .experienceRole
+  {
+    width: 35ex;
+    height: 60%;
+  }
+}
