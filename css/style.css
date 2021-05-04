@@ -219,6 +219,7 @@ body
     /* Rounded border */
     border-style: solid;
     border-radius: 9999px;
+    border-width: .35ex;
     cursor: pointer;
   }
 

@@ -100,14 +100,18 @@ function activateProject(id)
     {
       case 0: 
         $("#xita").css("opacity", "0");
+        $("#dot_xita").css("border-color", "black");
         break;
       case 1: 
         $("#mouse_vision").css("opacity", "0");
+        $("#dot_mousevision").css("border-color", "black");
         break;
       case 2:
         $("#cgal").css("opacity", "0");
+        $("#dot_cgal").css("border-color", "black");
       case 3:
         $("#venom").css("opacity", "0");
+        $("#dot_venom").css("border-color", "black");
         break;
 
       default:
@@ -118,18 +122,22 @@ function activateProject(id)
       case 0:
         $("#xita").css("opacity", "100%");
         $("#xita").css("z-index", ++front);
+        $("#dot_xita").css("border-color", "teal");
         break;
       case 1:
         $("#mouse_vision").css("opacity", "100%");
         $("#mouse_vision").css("z-index", ++front);
+        $("#dot_mousevision").css("border-color", "teal");
         break;
       case 2:
         $("#cgal").css("opacity", "100%");
         $("#cgal").css("z-index", ++front);
+        $("#dot_cgal").css("border-color", "teal");
         break;
       case 3:
         $("#venom").css("opacity", "100%");
         $("#venom").css("z-index", ++front);
+        $("#dot_venom").css("border-color", "teal");
         break;
 
       default:
