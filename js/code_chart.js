@@ -139,11 +139,11 @@ window.onload = function() {
       indexLabel: "{label} {y}",
       dataPoints: [
         {y: per_c*100, label: "C/C++", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
-        {y: per_caml*100, label: "Haskell-like", projects: "<strong>Includes Haskell, OCaml, LISP</strong><br>XCSE-PoC v1"},
+        {y: per_caml*100, label: "Haskell-like", projects: "<strong>Includes Haskell, OCaml, LISP</strong><br>XCSE-PoC v1<br>AutoCAD LISP Routines<br>XCSL-PoC (x86)"},
         {y: per_xcsl*100, label: "XCSL", projects: "XCSE-AArch64<br/>XCSE-x86_64"},
         {y: per_py*100, label: "Python", projects: "Smart Slice Cura Plugin"},
+        {y: per_asm*100, label: "Assembly", projects: "XCSE-AArch64 Bootloader<br/>XCSE-x86_64 Bootloader<br>(Xita translates to Assembly)"},
         {y: per_fb*100, label: "Flex/Bison", projects: "XCSL-AArch64<br/>XCSL-x86_64"},
-        {y: per_asm*100, label: "Assembly", projects: "XCSE-AArch64 Bootloader<br/>XCSE-x86_64 Bootloader"},
         {y: per_rust*100, label: "Rust", projects: "XCSE-PoC v2"},
         {y: per_web*100, label: "Web", projects: "Former Consultant<br/>https://codyfagley.github.io<br/>https://codeustech.github.io"},
         {y: per_scpt*100, label: "Scripts", projects: "Automation Scripts<br/>Makefile Installers"},
