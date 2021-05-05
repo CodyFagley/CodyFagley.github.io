@@ -209,6 +209,19 @@ body
   /*
     4.c) Navigation "Dot"
   */
+  .navigatorBar
+  {
+    position: absolute;
+    bottom: -8ex;
+    width: 80%;
+
+    display: flex;
+  }
+
+  .navigatorBar .dot:hover
+  {
+    background-color: teal;
+  }
 
   .dot 
   {

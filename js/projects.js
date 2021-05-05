@@ -67,7 +67,7 @@ $("document").ready(function(){
     if (!lock)
     $( "#dialog" ).dialog( "open" );
   });
-  $("#xita").on( "click", function(){
+  $("#xita_graph").on( "click", function(){
     if (!lock)
     $( "#dialog2" ).dialog( "open" );
   });

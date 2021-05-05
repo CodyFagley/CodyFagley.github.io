@@ -65,19 +65,19 @@ var total_asm = 2500 + 600;
 
 //  TODO: Programatically Determine Lines of Web Programming
 //  codyfagley.github.io | codeus.tech
-var total_html = 48+111;
+var total_html = 48+600;
 //  codyfagley.github.io | codeus.tech
-var total_css = 266+112;
+var total_css = 566+112;
 //  codyfagley.github.io | codeus.tech
-var total_js = 154+98;
+var total_js = 354+98;
 
 //  Total Lines of Web Programming
 var total_web = total_html + total_css + total_js;
 
 
 //  TODO: Programatically Determine Lines of Scripts
-var total_make = 245;
-var total_bash = 129 + 51;
+var total_make = 380;
+var total_bash = 800 + 51;
 
 //  Total Lines of Scripts
 var total_script = total_make + total_bash;
