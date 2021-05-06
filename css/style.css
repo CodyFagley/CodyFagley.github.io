@@ -152,7 +152,7 @@ body
   width: 65%;
 
   top: 12.5ex;
-  left: 20%;
+  left: 45ex;
   opacity: 0;
 
   position: inherit;
@@ -175,7 +175,7 @@ body
     .showcase
     {
       top: 7.5ex;
-      left: 22.5%;
+      left: 35ex;
     }
 
     .showcaseTitle { font-size: 2ex; }
