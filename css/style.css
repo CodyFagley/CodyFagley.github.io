@@ -255,7 +255,7 @@ body
   .navigatorBar
   {
     position: absolute;
-    bottom: -5%;
+    bottom: -15%;
     width: 40%;
     z-index: 99999999;
 
@@ -270,8 +270,8 @@ body
   .dot 
   {
     margin: auto;
-    height: 1.25em;
-    width: 1.25em;
+    height: 1.5em;
+    width: 1.5em;
 
     /* Rounded border */
     border-style: solid;
@@ -290,7 +290,7 @@ body
 {
   .showcase
   {
-    top: 7.5ex;
+    top: 6.5ex;
   }
 
   .showcaseTitle { font-size: 2ex; }
@@ -300,5 +300,12 @@ body
   .showcase .showcaseLeft, .showcase .showcaseRight
   {
     font-size: 1ex;
+  }
+
+  .dot
+  {
+    height: 1em;
+    width: 1em;
+
   }
 }
