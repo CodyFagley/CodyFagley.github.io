@@ -374,10 +374,12 @@ body
       .showcaseLeft
       {
         max-width: 100%;
+        font-size: 3.5ex;
       }
       .showcaseRight
       {
         max-width: 100%;
+        padding-top: 25%;
       }
 
       .showcaseTitle
