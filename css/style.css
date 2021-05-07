@@ -94,10 +94,11 @@ body
 
 .signature
 {
-  width: 40ex;
+  width: 20%;
   height: auto;
-  z-index: 45;
   margin-left: 1ex;
+
+  z-index: 45;
 }
 
 /* 2.a) Name Plate */
@@ -149,10 +150,10 @@ body
 .showcase
 {
   height: 65%;
-  width: 65%;
+  width: 70%;
 
-  top: 12.5ex;
-  left: 45ex;
+  top: 10ex;
+  left: 25%;
   opacity: 0;
 
   position: inherit;
@@ -160,6 +161,7 @@ body
 
   .showcaseTitle
   {
+    overflow-y: auto;
     position: relative;
     top: 2ex;
     left: 3ex;
@@ -169,16 +171,58 @@ body
     font-weight: bold;
   }
 
-
-  @media screen and (max-height: 900px)
+  .showcaseLeft
   {
-    .showcase
-    {
-      top: 7.5ex;
-    }
-
-    .showcaseTitle { font-size: 2ex; }
+    margin-inline: 2ex; 
+    max-width: 40%;
   }
+  .showcaseRight
+  {
+    overflow-y: auto;
+    max-width: 95%;
+    width: auto;
+    margin-left: 3ex;
+
+    color: rgb(75, 75, 75);
+    font-size: 1.75ex;
+  }
+
+  .showcase img
+  {
+    max-width: 85%;
+  }
+
+  .showcaseSubtitle
+  {
+
+    color: rgb(75, 75, 75);
+    font-size: 2.25ex;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 5ex;
+  }
+
+  .showcaseSubSubtitle
+  {
+    color: rgb(75, 75, 75);
+    font-size: 2.25ex;
+    font-style: italic;
+    margin-left: 5ex;
+  }
+
+  .experienceDescript
+  {
+    max-width: 100%;
+
+    color:rgb(75, 75, 75);
+    font-size: 2ex;
+  }
+
+  .experienceRole ul li
+  {
+    margin-bottom: 1ex;
+  }
+
 
 /*
   4.) Utility Classes
@@ -211,8 +255,9 @@ body
   .navigatorBar
   {
     position: absolute;
-    bottom: -8ex;
-    width: 80%;
+    bottom: -5%;
+    width: 40%;
+    z-index: 99999999;
 
     display: flex;
   }
@@ -225,8 +270,8 @@ body
   .dot 
   {
     margin: auto;
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.25em;
+    width: 1.25em;
 
     /* Rounded border */
     border-style: solid;
@@ -236,3 +281,22 @@ body
   }
 
 
+
+
+/*
+  MEDIA CORRECTIONS
+*/
+@media screen and (max-height: 900px)
+{
+  .showcase
+  {
+    top: 7.5ex;
+  }
+
+  .showcaseTitle { font-size: 2ex; }
+
+  .showcase .showcaseLeft, .showcase .showcaseRight
+  {
+    font-size: 1ex;
+  }
+}

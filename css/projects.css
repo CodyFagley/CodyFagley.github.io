@@ -24,7 +24,6 @@
 .projectText
 {
   position: inherit;
-  width: 55ex; 
   padding-right: 2.5ex;
 
   color:rgb(75, 75, 75);
@@ -54,7 +53,6 @@
   {
     font-size: 1.5ex;
     width: 70ex;
-    margin-left: -15ex;
   }
 }
 
