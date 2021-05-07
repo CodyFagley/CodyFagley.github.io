@@ -41,3 +41,15 @@
   font-size: 2ex;
   font-weight: bold;
 }
+
+
+/*
+  MEDIA CORRECTIONS
+*/
+@media screen and (max-height: 900px)
+{
+  .experienceItem
+  {
+    margin-top: 3ex;
+  }
+}
