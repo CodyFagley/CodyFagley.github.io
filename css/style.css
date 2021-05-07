@@ -294,6 +294,8 @@ body
   }
 
   .showcaseTitle { font-size: 2ex; }
+  .showcaseSubtitle { font-size: 1.65ex; }
+  .showcaseSubSubtitle { font-size: 1.4ex; }
 
   .showcase .showcaseLeft, .showcase .showcaseRight
   {
