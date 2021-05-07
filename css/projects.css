@@ -31,31 +31,6 @@
   font-style: italic;
 }
 
-.projectImages
-{
-  margin-top: -5ex;
-  margin-left: 3.5ex;
-}
-
-
-/*
-  MEDIA SCREENS
-*/
-
-@media screen and (max-height: 900px)
-{
-  .project
-  {
-    margin-top: 4ex;
-  }
-
-  .projectText
-  {
-    font-size: 1.5ex;
-    width: 70ex;
-  }
-}
-
 /*
   Dialog Handling
 */
@@ -89,3 +64,35 @@
   z-index: 60;
 }
 
+
+
+/*
+  MEDIA SCREENS
+*/
+@media screen and (max-height: 900px)
+{
+  .project
+  {
+    margin-top: 4ex;
+  }
+
+  .projectText
+  {
+    font-size: 1.5ex;
+    width: 70ex;
+  }
+}
+
+@media screen and (orientation:portrait) 
+{
+  .project, .experienceContent
+  {
+    display: unset;
+  } 
+
+  .showcaseRight
+  {
+    margin-top: 10%;
+  }
+
+}

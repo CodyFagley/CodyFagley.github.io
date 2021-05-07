@@ -323,17 +323,24 @@ body
   */
   @media screen and  (orientation: portrait)
   {
+    /* Hide in Portrait Mode */
     .landscapeOnly
     {
       font-size: 1px;
     }
 
+    /* Top Navigation Bar */
     .topbar ul li
     {
       padding-inline: 1.5ex;
       font-size: 4ex;
     }
 
+    .dot
+    {
+      height: 2em;
+      width: 2em;
+    }
 
 
     /* 2.a) Name Plate */
@@ -353,6 +360,39 @@ body
       .contactIcon
       {
         width: 5ex; 
+      }
+
+    /*
+      Showcase Data
+    */
+    .showcase
+    {
+      width: 65%;
+      height: 80%;
+      left: 30%;
+    }
+      .showcaseLeft
+      {
+        max-width: 100%;
+      }
+      .showcaseRight
+      {
+        max-width: 100%;
+      }
+
+      .showcaseTitle
+      {
+        font-size: 5ex;
+      }
+      .showcaseSubtitle
+      {
+        font-size: 4ex;
+        margin-left: 2ex;
+      }
+      .showcaseSubSubtitle
+      {
+        font-size: 3ex;
+        margin-left: 2ex;
       }
     
   }

@@ -44,6 +44,10 @@
   font-weight: bold;
 }
 
+.experienceContent
+{
+  display: flex;
+}
 
 /*
   MEDIA CORRECTIONS
@@ -60,3 +64,20 @@
     height: 3ex;
   }
 }
+
+@media screen and (orientation: portrait) 
+{
+
+  .experienceContent .showcaseLeft
+  {
+    font-size: 3ex;
+  }
+
+  .experiencePeriod
+  {
+    font-size: 3.25ex;
+    padding-top: 5ex;
+  }
+}
+
+
