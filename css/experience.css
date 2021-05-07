@@ -78,6 +78,13 @@
     font-size: 3.25ex;
     padding-top: 5ex;
   }
+
+  .companyLogo
+  {
+    height: 9ex;
+    right: 0;
+    position: absolute;
+  }
 }
 
 
