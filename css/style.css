@@ -95,10 +95,11 @@ body
 .signature
 {
   width: 20%;
-  height: auto;
+  height: 80%;
   margin-left: 1ex;
+  position: relative;
 
-  z-index: 45;
+  z-index: 99999999999999;
 }
 
 /* 2.a) Name Plate */
@@ -107,7 +108,6 @@ body
   color: rgb(55, 55, 55);
   font-family: EB Garamond;
   font-size: 2em;
-  position: inherit;
   z-index: 1;
 }
 
@@ -118,7 +118,6 @@ body
   color: rgb(95, 95, 95);
   font-family: EB Garamond;
   font-size: 1.5em;
-  position: inherit;
   z-index: 1;
   top: 3ex;
   margin-top: -1.5ex;
@@ -131,7 +130,6 @@ body
   left: 1ex;
   height: auto;
   max-width: 100%;
-  position: inherit;
   z-index: 1;
 }
 
@@ -139,9 +137,15 @@ body
 {
   font-family: EB Garamond;
   font-size: 1em;
-  z-index: 2;
+  z-index: 2000000;
   padding-top: .5ex;
 }
+  .contactIcon
+  {
+    margin-top: .5ex;
+    width: 5ex; 
+    height: auto;
+  }
 
 
 /*
@@ -286,26 +290,70 @@ body
 /*
   MEDIA CORRECTIONS
 */
-@media screen and (max-height: 900px)
-{
-  .showcase
+  /*
+    Small-Screen Landscape
+  */
+  @media screen and (max-height: 900px)
   {
-    top: 6.5ex;
+    .showcase
+    {
+      top: 6.5ex;
+    }
+
+    .showcaseTitle { font-size: 2ex; }
+    .showcaseSubtitle { font-size: 1.5ex; }
+    .showcaseSubSubtitle { font-size: 1.25ex; }
+
+    .showcase .showcaseLeft, .showcase .showcaseRight
+    {
+      font-size: 1ex;
+    }
+
+    .dot
+    {
+      height: 1em;
+      width: 1em;
+
+    }
   }
 
-  .showcaseTitle { font-size: 2ex; }
-  .showcaseSubtitle { font-size: 1.5ex; }
-  .showcaseSubSubtitle { font-size: 1.25ex; }
 
-  .showcase .showcaseLeft, .showcase .showcaseRight
+  /*
+    Portrait Orientation
+  */
+  @media screen and  (orientation: portrait)
   {
-    font-size: 1ex;
+    .landscapeOnly
+    {
+      font-size: 1px;
+    }
+
+    .topbar ul li
+    {
+      padding-inline: 1.5ex;
+      font-size: 4ex;
+    }
+
+
+
+    /* 2.a) Name Plate */
+    .nameplate
+    {
+      font-size: 2.5em;
+    }
+    /* 2.b) Job Plate */
+    .jobplate
+    {
+      font-size: 2.25em;
+    }
+    .contact
+    {
+      font-size: 2em;
+    }
+      .contactIcon
+      {
+        width: 5ex; 
+      }
+    
   }
 
-  .dot
-  {
-    height: 1em;
-    width: 1em;
-
-  }
-}
