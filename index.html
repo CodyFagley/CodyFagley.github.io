@@ -52,10 +52,11 @@
     <img class="imgplate" src="aux/cody.jpg"/>
   
     <div class="contact">
-      <a class="landscapeOnly">phone: </a><a href="tel:1-307-272-9065">(307)272-9065</a><br>
-      <a class="landscapeOnly">email: </a><a href="mailto:cfagley@codeus.tech">cfagley@codeus.tech</a><br>
+      <span class="landscapeOnly">phone: </span><a href="tel:1-307-272-9065">(307)272-9065</a><br>
+      <span class="landscapeOnly">email: </span><a href="mailto:cfagley@codeus.tech">cfagley@codeus.tech</a><br>
       <a href="https://www.linkedin.com/in/cody-fagley/" target="_blank"><img src="aux/linkedin.png" class="contactIcon"/></a>
       <a href="https://www.researchgate.net/profile/Cody_Fagley" target="_blank"><img src="aux/researchgate.png" class="contactIcon"/></a>
+      <a href="https://github.com/CodyFagley" target="_blank"><img src="aux/logos/github.png" class="contactIcon"></a>
       <a href="https://codeustech.github.io" target="_blank"><img src="aux/codeus.png" class="contactIcon"/></a>
     </div>
   </div>
@@ -76,7 +77,7 @@
     <!-- Xita -->
     <div class="project" id="xita">
       <div class="showcaseLeft">
-        <div >
+        <div class="text">
           <strong>Xita Control System</strong> is an ambitious attempt to provide intrinsic security for industrial embedded devices (IIoT).  <br/><br/>
           Xita produces freestanding (OS-independent) assembly code with guaranteed protection from:
           <ul>
@@ -96,7 +97,7 @@
     <!-- MouseVision -->
     <div class="project" id="mouse_vision">
       <div class="showcaseLeft">
-        <div >
+        <div class="text">
           <strong><a href="https://uwyo.figshare.com/articles/presentation/MouseVision/13704712/1" target="_blank">MouseVision</a></strong> 
           combines facial recognition software (OpenCV) with voice recognition libraries (CMU Sphinx) to enable users to control their computer
           mouse cursor without use of their hands.  <br><br>
@@ -117,7 +118,7 @@
     <!-- CGAL -->
     <div class="project" id="cgal">    
       <div class="showcaseLeft">
-        <div >
+        <div class="text">
           While consulting in October 2019, I ported python bindings for <a href="https://github.com/CGAL/cgal-swig-bindings/pull/146" target="_blank">Computational Geometry Algorithms Library</a></strong> (CGAL). 
           <br><br>Specifically, I provided Python libraries with equivalent functions/features to CGAL's 3d shape detection library (C++).<br><br>
           Note: These used "Efficient RANSAC" algorithm and do not provide implementations for "Region Growing".
@@ -131,7 +132,7 @@
     <!-- Undergrad Research: Venom -->
     <div class="project" id="venom">
       <div class="showcaseLeft">
-        <div >
+        <div class="text">
           While studying chemical engineering, I verified that basic (pH) venom from Water Moccasin (Agkistrodon Piscivorus) inhibits 
           generation of blood clotting agents in the same way that more acidic varients of Agkistrodon snakes do.<br><br>
           It was determined that basic Agkistrodon venom does indeed inhibit prothrombin conversion.<br><br>
@@ -182,7 +183,7 @@
       <div class="experienceContent">
         <div class="showcaseLeft">
           <div class="experienceContentTitle">Description</div>
-          <div class="experienceDescript">
+          <div class="text">
             Codeus Tech builds an alternative foundation for secure, high-assurance embedded (IoT) devices.<br><br>
             Their flagship product includes a proprietary programming language that can be developed either graphically or with functional (Haskell-like) syntax.<br><br>
             Xita Control System (XCS) eliminates several low-level security holes such as memory buffer overflow, microarchitecture data sampling, and several physical side-channels.
@@ -190,7 +191,7 @@
         </div>
         <div class="showcaseRight">
           <div class="experienceContentTitle">Role & Duties</div>
-          <div class="experienceRole">
+          <div class="text">
             <strong>Years 1-2</strong>
             <ul>
               <li>Verified operating subsystem designs in OCaml and Rust for use in new programming language</li>
@@ -210,6 +211,7 @@
       </div>
     </div>
 
+    <!-- Teton Simulation -->
     <div class="experienceItem" id="teton">
       <div style="display: flex;">
         <div>
@@ -222,31 +224,97 @@
       <div class="experienceContent">
         <div class="showcaseLeft">
           <div class="experienceContentTitle">Description</div>
-          <div class="experienceDescript">
-            Teton Simulation is revolutionizing additive manufacturing with their <strong>SmartSlice plugin</strong>.<br><br>
+          <div class="text">
+            <a href="https://www.tetonsim.com/" target="_blank">Teton Simulation</a> is revolutionizing additive manufacturing with their <strong>SmartSlice plugin</strong>.<br><br>
             Their novel technology leverages AI to perform virtual analysis and stress testing on 3d printed parts.<br><br>
             SmartSlice effectively optimizes part design for a use-case with applied forces/anchors to ensure the part will not break and material is not needlessly wasted.
           </div>
         </div>
         <div class="showcaseRight">
           <div class="experienceContentTitle">Role & Duties</div>
-          <div class="experienceRole" style="overflow-y: auto;">
+          <div class="experienceRole text" style="overflow-y: auto; width: 90%">
           <ul>
-            <li>Provided Python bindings for standard CGAL libraries which detect 2d faces in 3d point clouds (see Projects #3)</li>
-            <li>Built algorithm for detecting face selection of 3d shape </li>
-            <li>Implemented SmartSlice-specific user interface settings using Python and Qml5</li>
+            <li>Provided Python bindings for standard CGAL libraries which detect 2d faces in 3d point clouds (see Projects #3)</li><br>
+            <li>Built algorithm for detecting mouse-click face selection for 3d shapes</li><br>
+            <li>Implemented SmartSlice user interface settings using Python and Qt/Qml</li><br>
           </ul>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="experienceItem" id="siteseers">
+      <div style="display: flex;">
+        <div>
+          <div class="showcaseSubtitle">Site-Seers</div>
+          <div class="showcaseSubSubtitle">Co-Founder / Software Engineer</div>
+        </div>
+        <img class="companyLogo" src="aux/logos/seers.png"/>
+        <div class="experiencePeriod" style="margin-left: 10%;">June 2016 - May 2017</div>
+      </div>
+      <div class="experienceContent">
+        <div class="showcaseLeft">
+          <div class="experienceContentTitle">Description</div>
+          <div class="text">
+            Site-Seers built websites intended to modernize websites and increase web traffic for downtown businesses on a budget.<br><br>
+            During operation, Laramie (Wyoming) had a shortage of local consultants and large demand for cheap websites, so we filled that niche.<br><br>
+            We built our own templates from scratch using HTML, CSS, and various Javascript frameworks, depending on customer needs.<br><br>
+            I helped form this side hussle during my junior/senior years of computer science.
+          </div>
+        </div>
+        <div class="showcaseRight">
+          <div class="experienceContentTitle">Role & Duties</div>
+          <div class="experienceRole text" style="overflow-y: auto;">
+            <ul>
+              <li>Led non-aesthetic programming work (HTML5, CSS3, jQuery, etc.)</li><br>
+              <li>Evaluated customer needs to ensure technical work was in scope for our team</li><br>
+              <li>Accepted requirements from clients and translated into demos</li><br>
+              <li>Found clients through farmer's markets, cold calls, and direct reach out</li><br>
+              <li>Worked with graphical artists to ensure a pleasing user experience</li><br>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="experienceItem" id="westmoreland">
+    <div style="display: flex;">
+      <div>
+        <div class="showcaseSubtitle">Westmoreland Mining</div>
+        <div class="showcaseSubSubtitle">Sys. Admin / Programmer</div>
+      </div>
+      <img class="companyLogo" src="aux/logos/westmoreland.png"/>
+      <div class="experiencePeriod" style="margin-left: 10%;">May - August 2015</div>
+    </div>
+    <div class="experienceContent">
+      <div class="showcaseLeft">
+        <div class="experienceContentTitle">Description</div>
+        <div class="text">
+          I was a summer intern at <a href="https://westmoreland.com/location/jewett-mine-texas/" target="_blank">Westmoreland Coal Company's mine in Jewitt, Texas</a> as a system admin and software engineer.<br><br>
+          My main priority was to maintain working optimal IT and OT environments for the computers on property.  To do this, I wrote numerous scripts of varying programming language and operating system for automation.<br><br>
+          However, this was also the start of my formal cybersecurity training.  Coal industry attracts potent cybersecurity threats, and it was my department that resolved server/workstation issues as they arose.
+        </div>
+      </div>
+      <div class="showcaseRight">
+        <div class="experienceContentTitle">Role & Duties</div>
+        <div class="experienceRole text" style="overflow-y: auto; width: 90%">
+        <ul>
+          <li>Maintained and serviced industrial servers using <span style="font-style: italic;">Windows Server 2012</span> and <span style="font-style: italic;">Ubuntu 14.04</span> operating systems</li><br>
+          <li>Authored scripts in BASH/Batch for automating tedious engineering/industrial tasks</li><br>
+          <li>Built specially-tailored features/functions in VisualBasic/LISP for AutoCAD and Microsoft Excel</li><br>
+          <li>Recorded back-up images of computers on property and restored all computers on site (200+) from ransomware attack</li><br>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- Experience Navigation Bar -->
     <div class="navigatorBar">
       <div class="dot" id="dot_codeus"></div>
-      <div class="dot" id="dot_teton"></div><!--
+      <div class="dot" id="dot_teton"></div>
       <div class="dot" id="dot_siteseers"></div>
-      <div class="dot" id="dot_westmoreland"></div>-->
+      <div class="dot" id="dot_westmoreland"></div>
     </div>
   </div> 
 

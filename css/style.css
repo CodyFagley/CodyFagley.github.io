@@ -42,6 +42,21 @@ body
   position: absolute;
 }
 
+/*
+  Link Standard Style
+*/
+a
+{
+  text-decoration: none;
+  color: teal;
+  cursor: pointer;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
 /* 1.a) Top Navigation Bar */
 .topbar
 {
@@ -143,7 +158,7 @@ body
   .contactIcon
   {
     margin-top: .5ex;
-    width: 5ex; 
+    width: 4ex; 
     height: auto;
   }
 
@@ -153,7 +168,7 @@ body
 */
 .showcase
 {
-  height: 65%;
+  height: 75%;
   width: 70%;
 
   top: 10ex;
@@ -214,7 +229,7 @@ body
     margin-left: 5ex;
   }
 
-  .experienceDescript
+  .text
   {
     max-width: 100%;
 
