@@ -40,7 +40,7 @@
   color: white;
   text-align: center;
 
-  z-index: 55;
+  z-index: 99999999999;
   cursor: pointer;
 }
 

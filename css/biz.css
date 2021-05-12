@@ -1,0 +1,97 @@
+/*
+  biz.css
+  Cody Fagley
+  Last Modified May 11, 2021
+*/
+
+/*
+  Contains Styling properties specific to business development "page"
+*/
+
+
+
+.businessShowcase
+{
+  position: relative;
+  top: 10%;
+  height: 90%;
+  width: 100%;
+  
+  border-style: solid;
+  border-radius: 2ex;
+  /*background-color: teal;*/
+  color: teal;
+  
+  overflow-x: auto;
+}
+
+
+.businessItem
+{
+  position: relative;
+  height: 25ex;
+  width: 25ex;
+  margin: 5ex;
+
+  z-index: 1000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.businessItem:hover
+{
+  opacity: 65%;
+  cursor: pointer;
+}
+
+.businessItemText
+{
+  position: absolute;
+
+  font-size: 2.5ex;
+  font-weight: bold;
+}
+
+
+
+
+/*
+  Specific Changes
+*/
+
+.cashflowText
+{
+  left: 2ex;
+  top: 2ex;
+}
+  .budgetImage
+  {
+    max-width: 100%;
+  }
+
+.ganttText
+{
+  left: 1ex;
+  bottom: 1ex;
+}
+
+
+
+  
+
+
+/*
+  MEDIA SCREENS
+*/
+@media screen and (max-height: 900px)
+{
+  .businessItem
+  {
+    height: 15ex;
+    width: 15ex;
+  }
+  .businessItemText
+  {
+    font-size: 1.5ex;
+  }
+}

@@ -21,25 +21,30 @@
   <script src="js/showcase.js"></script> 
   <script src="js/projects.js"></script>
   <script src="js/experience.js"></script>
+  <script src="js/business.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   <link rel="manifest" href="manifest.json">
 
   <!-- Fonts -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=EB+Garamond" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">                                                <!-- Ubuntu Light -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 
   <!-- CSS Import -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/experience.css">
   <link rel="stylesheet" href="css/references.css">
   <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/biz.css">
 </head>
 
 <body id="container">
 
-  <div class="topbar">
+  <div class="topbar" id="topbar">
     <ul>
       <li id="nav_overview">Overview</li>
-      <li id="nav_projects">Projects</li> 
+      <li id="nav_projects">STEM</li> 
+      <!--<li id="nav_business">Biz Dev</li>-->
       <li id="nav_experience">Experience</li>
       <!--<li id="nav_references">References</li>-->
     </ul>
@@ -71,8 +76,8 @@
   <!--
     PROJECTS SHOWCASE
   -->
-  <div class="showcase" id="projects">
-    <div class="showcaseTitle">Examples of Work</div>
+  <div class="showcase" id="stem">
+    <div class="showcaseTitle">Selected STEM Projects</div>
 
     <!-- Xita -->
     <div class="project" id="xita">
@@ -94,6 +99,21 @@
       </div>
     </div>
 
+    <!-- CGAL -->
+    <div class="project" id="cgal">    
+      <div class="showcaseLeft">
+        <div class="text">
+          While consulting in October 2019, I ported python bindings for <a href="https://github.com/CGAL/cgal-swig-bindings/pull/146" target="_blank">Computational Geometry Algorithms Library</a></strong> (CGAL). <br><br>
+          The Efficient RANSAC algorithm reads an arbitrary list of points in 3d space to determine the best set of 2d shapes (faces).  The 2d shapes together form an interactable 3d object (mesh).<br><br>  
+          Specifically, I provided Python libraries with equivalent functions/features to CGAL's 3d shape detection library (C++).<br><br>
+          Note: These used "Efficient RANSAC" algorithm and do not provide implementations for "Region Growing".
+        </div>
+      </div>
+      <div class="showcaseRight spacer" style="text-align: center; margin-top: -10%;">
+        <a href="https://doc.cgal.org/latest/Shape_detection/index.html" target="_blank">Vizualization of Efficient RANSAC Algorithm<br/><img src="aux/ransac.png" id="ransac"/></a> <br/>
+      </div>
+    </div>
+
     <!-- MouseVision -->
     <div class="project" id="mouse_vision">
       <div class="showcaseLeft">
@@ -107,25 +127,11 @@
             <li>"Left Click"</li>
             <li>"Right Click"</li>
           </ul>
-          (co-developed with <a href="https://www.linkedin.com/in/mark-gradecki-1b757912a" target="_blank">Mark Gradecki</a>, <a href="https://www.linkedin.com/in/shane-firnekas-110a97117/" target="_blank">Shane Firnekas</a>, and <a href="https://www.linkedin.com/in/wyatt-horner-ab9887116/" target="_blank">Wyatt Horner</a>) 
+          (Co-developers: <a href="https://www.linkedin.com/in/mark-gradecki-1b757912a" target="_blank">Mark Gradecki</a>, <a href="https://www.linkedin.com/in/shane-firnekas-110a97117/" target="_blank">Shane Firnekas</a>, and <a href="https://www.linkedin.com/in/wyatt-horner-ab9887116/" target="_blank">Wyatt Horner</a>) 
         </div>
       </div>
       <div class="showcaseRight spacer" style="text-align: center; margin-top: -10%;">
         Facial Tracker (OpenCV)<br/><img src="aux/tracker.png" id="tracker"/> <br/>
-      </div>
-    </div>
-
-    <!-- CGAL -->
-    <div class="project" id="cgal">    
-      <div class="showcaseLeft">
-        <div class="text">
-          While consulting in October 2019, I ported python bindings for <a href="https://github.com/CGAL/cgal-swig-bindings/pull/146" target="_blank">Computational Geometry Algorithms Library</a></strong> (CGAL). 
-          <br><br>Specifically, I provided Python libraries with equivalent functions/features to CGAL's 3d shape detection library (C++).<br><br>
-          Note: These used "Efficient RANSAC" algorithm and do not provide implementations for "Region Growing".
-        </div>
-      </div>
-      <div class="showcaseRight spacer" style="text-align: center; margin-top: -10%;">
-        <a href="https://doc.cgal.org/latest/Shape_detection/index.html" target="_blank">Vizualization of Efficient RANSAC Algorithm<br/><img src="aux/ransac.png" id="ransac"/></a> <br/>
       </div>
     </div>
 
@@ -148,10 +154,18 @@
     <!-- Project Navigation Bar -->
     <div class="navigatorBar">
       <div class="dot" id="dot_xita"></div>
-      <div class="dot" id="dot_mousevision"></div>
       <div class="dot" id="dot_cgal"></div>
+      <div class="dot" id="dot_mousevision"></div>
       <div class="dot" id="dot_venom"></div>
     </div>
+
+    <!--
+    <ul class="navigatorPane">
+      <li id="nav_xita">Xita</li>
+      <li id="nav_cgal">CGAL</li>
+      <li id="nav_mousevision">MouseVision</li>
+      <li id="nav_venom">Cottonmouth</li>
+    </ul>-->
 
     <!-- Xita Dialog Boxes -->
     <div id="dialog" title="Xita Generated Assembly (Fibonacci)">
@@ -162,6 +176,36 @@
       <img src="aux/xitagraph.png"/><br/>
       <strong>Click here to close dialog</strong>
     </div>
+  </div>
+
+  <!--
+    BUSINESS SHOWCASE
+  -->
+  <div class="showcase" id="business">
+    <div class="showcaseTitle">Business Development</div>
+
+    <div class="businessShowcase" id="business_panner">
+
+      <!-- Cashflows -->
+      <div class="businessItem" id="cashflow" style="background-image: url('aux/resource/BudgetSquare.png');">
+        <span class="businessItemText cashflowText">Cash Flow<br>Analysis</span>
+      </div>
+      <!-- Project Planning -->
+      <a href="aux/resource/XCS_SoW.pdf" target="_blank"><div class="businessItem" id="planning" style="background-image: url('aux/resource/gantt.png');">
+        <span class="businessItemText ganttText">Project<br>Planning</span>
+      </div></a>
+      <!--  -->
+
+    </div>
+
+
+
+    <!--  Dialogs  -->
+    <div id="dialog_cashflows" title="Practical Example:  Cash Flow Projection">
+      <img src="aux/resource/BudgetSample.png" class="budgetImage"/> <br/>
+      <strong>Click here to close dialog</strong>
+    </div>
+
   </div>
 
   <!-- 
@@ -194,10 +238,10 @@
           <div class="text">
             <strong>Years 1-2</strong>
             <ul>
-              <li>Verified operating subsystem designs in OCaml and Rust for use in new programming language</li>
+              <li>Verified subsystem designs in OCaml and Rust for use in new programming language</li>
               <li>Planned and prototyped OS-independent programming language (XCSL) for x86_64 and AArch64 chips</li>
-              <li>Built team of University professors for proposals</li>
-              <li>Led employees in firmware/compiler development</li>
+              <li>Recruited team of elite University professors as subcontractors for high-value grants</li>
+              <li>Led employees in firmware, compiler, and OS development</li>
             </ul>
             <strong>Years 3-4</strong>
             <ul>
@@ -302,7 +346,9 @@
           <li>Maintained and serviced industrial servers using <span style="font-style: italic;">Windows Server 2012</span> and <span style="font-style: italic;">Ubuntu 14.04</span> operating systems</li><br>
           <li>Authored scripts in BASH/Batch for automating tedious engineering/industrial tasks</li><br>
           <li>Built specially-tailored features/functions in VisualBasic/LISP for AutoCAD and Microsoft Excel</li><br>
-          <li>Recorded back-up images of computers on property and restored all computers on site (200+) from ransomware attack</li><br>
+          <li>Recorded back-up images of computers on property<ul>
+            <li>Restored 200+ computers from ransomware attack</li>
+          </ul></li><br>
         </ul>
         </div>
       </div>

@@ -154,5 +154,9 @@ window.onload = function() {
     backgroundColor: "#F2F2F2"
   });
   chart.render();
+
+  //  To prevent glitches caused by navigating before chart loads
+  setTimeout(function() { $("#topbar").animate({opacity: "100%"}, "slow"); }, 1000);
+  
 }
 
